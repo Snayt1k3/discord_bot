@@ -2,6 +2,13 @@
   "dependencies": {
     "discord.js": "^14.15.3",
     "dotenv": "^16.4.5",
+    "tsup": "^8.1.0",
+    "tsx": "^4.16.0",
     "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "node dist/main.js",
+    "build": "tsup src/main.ts --minify"
   }
 }
